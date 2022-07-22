@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Align Content</title>
+  <style>
+    .container{
+      height: 400px;
+      max-width:300px;
+      display:flex;
+      flex-wrap: wrap;
+      border: 1px solid black;
+    }
+    .item{
+      background-color:royalblue;
+      padding:0 5px;
+      flex: 1;
+      text-align:center;
+      color: white;
+      margin: 5px;
+    }
+    .center{
+      align-items: center;
+    }
+    .stretch{
+      align-items: stretch;
+    }
+    .flex-start{
+      align-items: flex-start;
+    }
+    .flex-end{
+      align-items: flex-end;
+    }
+    .space-between{
+      align-items: space-between;
+    }
+    .space-around{
+      align-items: space-around;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Stretch</h1>
+  <div class="container stretch">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet </div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item"> blanditiis voluptatum tempora</div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item">dignissimos quod illo </div>
+    <div class="item">dignissimos quod illo </div>
+  </div>
+
+
+  <h1>Center</h1>
+  <div class="container center">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet </div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item"> blanditiis voluptatum tempora</div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item">dignissimos quod illo </div>
+    <div class="item">dignissimos quod illo </div>
+  </div>
+
+
+  <h1> Flex-Start</h1>
+  <div class="container flex-start">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet </div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item"> blanditiis voluptatum tempora</div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item">dignissimos quod illo </div>
+    <div class="item">dignissimos quod illo </div>
+  </div>
+
+
+  <h1>Flex-End</h1>
+  <div class="container flex-end">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet </div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item"> blanditiis voluptatum tempora</div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item">dignissimos quod illo </div>
+    <div class="item">dignissimos quod illo </div>
+  </div>
+
+
+  <h1>Space-Between</h1>
+  <div class="container space-between">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet </div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item"> blanditiis voluptatum tempora</div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item">dignissimos quod illo </div>
+    <div class="item">dignissimos quod illo </div>
+  </div>
+
+
+  <h1>Space-Around</h1>
+  <div class="container space-around">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet </div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item"> blanditiis voluptatum tempora</div>
+    <div class="item">dignissimos quod illo commodi dicta velit hic. </div>
+    <div class="item">dignissimos quod illo </div>
+    <div class="item">dignissimos quod illo </div>
+  </div>
+</body>
+</html>
