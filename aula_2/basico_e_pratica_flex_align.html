@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos- align self</title>
+</head>
+<style>
+    .flex-container {
+      display: flex;
+      border: 1px solid black;
+      margin-bottom:10px;
+      max-width: 350px;
+      /**/
+      
+    }
+    .align-content {
+      align-items: center;
+    }
+    .items {
+      background-color:brown;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+    .center{
+      align-self: center;
+    }
+    .start {
+      align-self: flex-start;
+    }
+
+    .end {
+      align-self: flex-end;
+    }
+    .baseline{
+      align-self: baseline;
+    }
+    .stretch{
+      align-items: stretch;
+    }
+
+    .auto {
+      align-items: auto;
+    }
+</style>
+<body>
+  <section class="flex-container align-content">
+    <div class="items auto">AAAAA</div>
+    <div class="items auto">Lorem ipsum dolor sit</div>
+    <div class="items auto">consectetur adipisicing elit. Illum veniam neque </div>
+    <div class="items auto">esse quas a suscipit porro provident est, explicabo </div>
+  </section>
+
+
+  <section class="flex-container">
+    <div class="items stretch">AAAAA</div>
+    <div class="items start">Lorem ipsum dolor sit</div>
+    <div class="items center">tetur adipisicing elit. </div>
+    <div class="items end">esse quas a suscipit porro provident est</div>
+  </section>
+</body>
+</html>
